@@ -26,19 +26,22 @@ const addToWishlist = (hotel) => {
     );
   }
 };
-  return (
-    <BrowserRouter>
-      <Navbar />
+ return (
+  <BrowserRouter basename="/Hotel-Booking-App">
+    <Navbar />
 
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/hotels" element={<Hotels />} />
-        <Route path="/wishlist" element={<Wishlist />} />
-        <Route path="/hotel/:id"element={<HotelDetails addToWishlist={addToWishlist} />}
-/>
-        <Route path="/booking" element={<Booking />} />
-      </Routes>
-    </BrowserRouter>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/hotels" element={<Hotels />} />
+      <Route path="/wishlist" element={<Wishlist />} />
+      <Route
+        path="/hotel/:id"
+        element={<HotelDetails addToWishlist={addToWishlist} />}
+      />
+      <Route path="/booking" element={<Booking />} />
+    </Routes>
+  </BrowserRouter>
+);
   );
 }
 
