@@ -27,7 +27,7 @@ const addToWishlist = (hotel) => {
   }
 };
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/Hotel-Booking-App">
       <Navbar />
 
       <Routes>
