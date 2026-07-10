@@ -401,13 +401,9 @@ nav a:hover {
 }
 
 .search-section input {
-  width: 450px;
+  width: 100%;
+  max-width: 450px;
   padding: 15px 25px;
-  border: none;
-  border-radius: 50px;
-  font-size: 18px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-  outline: none;
 }
 
 .hotel-card {
@@ -512,7 +508,8 @@ nav a:hover {
 
 /* IMAGE */
 .image-section img {
-  width: 550px;
+  width: 100%;
+  max-width: 550px;
   height: 450px;
   object-fit: cover;
   border-radius: 20px;
@@ -603,14 +600,13 @@ nav a:hover {
 }
 
 .booking-card {
-  width: 450px;
+  width: 100%;
+  max-width: 450px;
   background: rgba(255,255,255,0.08);
   backdrop-filter: blur(20px);
   border-radius: 20px;
   padding: 40px;
   color: white;
-  box-shadow: 0 20px 60px rgba(0,0,0,0.3);
-  text-align: center;
 }
 
 .booking-card h1 {
