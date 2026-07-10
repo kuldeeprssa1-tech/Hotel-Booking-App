@@ -916,3 +916,321 @@ nav a:hover {
 }
 
 
+
+
+
+
+/*   RESPONSIVE DESIGN */
+
+/* ---------- Large Desktop (1600px+) ---------- */
+@media (min-width:1600px){
+
+.hotel-container,
+.related-hotels-grid{
+    max-width:1600px;
+}
+
+.hero-content{
+    max-width:800px;
+}
+
+.hero-content h1{
+    font-size:42px;
+}
+
+.hero-content h1 span{
+    font-size:38px;
+}
+
+}
+
+/* ---------- Laptop ---------- */
+
+@media (max-width:1200px){
+
+nav{
+    padding:20px 40px;
+}
+
+.hero-content{
+    padding-left:60px;
+}
+
+.features{
+    grid-template-columns:repeat(2,1fr);
+}
+
+.destination-grid{
+    grid-template-columns:repeat(2,1fr);
+}
+
+.hotel-container{
+    grid-template-columns:repeat(2,1fr);
+}
+
+.related-hotels-grid{
+    grid-template-columns:repeat(2,1fr);
+}
+
+.details-container{
+    flex-direction:column;
+}
+
+.image-section img{
+    width:100%;
+    height:450px;
+}
+
+.footer-container{
+    grid-template-columns:repeat(2,1fr);
+}
+
+}
+
+/* ---------- Tablet ---------- */
+
+@media (max-width:992px){
+
+nav{
+    padding:18px 25px;
+}
+
+nav h2{
+    font-size:30px;
+}
+
+nav a{
+    font-size:17px;
+}
+
+.hero-content{
+    padding:170px 30px 0;
+}
+
+.hero-content h1{
+    font-size:34px;
+}
+
+.hero-content h1 span{
+    font-size:30px;
+}
+
+.search-box{
+    width:95%;
+    gap:15px;
+    padding:20px;
+}
+
+.features{
+    grid-template-columns:repeat(2,1fr);
+    padding:50px 30px;
+}
+
+.destination-grid{
+    grid-template-columns:repeat(2,1fr);
+}
+
+.hotel-container{
+    grid-template-columns:repeat(2,1fr);
+}
+
+.related-hotels-grid{
+    grid-template-columns:repeat(2,1fr);
+}
+
+.footer-container{
+    grid-template-columns:repeat(2,1fr);
+}
+
+.booking-card{
+    width:100%;
+    max-width:500px;
+}
+
+}
+
+/* ---------- Mobile ---------- */
+
+@media (max-width:768px){
+
+nav{
+    flex-direction:column;
+    padding:15px;
+    gap:15px;
+}
+
+nav div{
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:15px;
+}
+
+.hero{
+    height:auto;
+    min-height:100vh;
+}
+
+.hero-content{
+    padding:140px 20px 30px;
+    text-align:center;
+}
+
+.hero-content h1{
+    font-size:28px;
+}
+
+.hero-content h1 span{
+    font-size:26px;
+}
+
+.subtitle{
+    font-size:15px;
+}
+
+.search-box{
+    position:relative;
+    left:auto;
+    bottom:auto;
+    transform:none;
+
+    width:92%;
+    margin:30px auto;
+
+    flex-direction:column;
+}
+
+.search-item{
+    width:100%;
+}
+
+.search-btn{
+    width:100%;
+}
+
+.features,
+.destination-grid,
+.hotel-container,
+.related-hotels-grid,
+.footer-container{
+    grid-template-columns:1fr;
+}
+
+.testimonial-container{
+    flex-direction:column;
+    align-items:center;
+}
+
+.testimonial-card{
+    width:100%;
+}
+
+.details-page{
+    padding:100px 20px;
+}
+
+.details-container{
+    padding:20px;
+}
+
+.image-section img{
+    width:100%;
+    height:250px;
+}
+
+.buttons{
+    flex-direction:column;
+}
+
+.book-btn,
+.wishlist-btn,
+.wishlist-btn-view{
+    width:100%;
+}
+
+.hotels-banner h1{
+    font-size:34px;
+}
+
+.hotels-title{
+    font-size:34px;
+}
+
+.map-section{
+    padding:60px 20px;
+}
+
+.map-header h2{
+    font-size:30px;
+}
+
+.booking-page{
+    padding:20px;
+}
+
+.booking-card{
+    padding:25px;
+}
+
+.row{
+    flex-direction:column;
+}
+
+.footer{
+    padding:50px 20px;
+}
+
+}
+
+/* ---------- Small Mobile ---------- */
+
+@media (max-width:480px){
+
+.hero-content h1{
+    font-size:24px;
+}
+
+.welcome{
+    font-size:12px;
+    letter-spacing:3px;
+}
+
+.subtitle{
+    font-size:14px;
+}
+
+.hotels-banner{
+    height:220px;
+}
+
+.hotels-banner h1{
+    font-size:28px;
+}
+
+.hotels-banner p{
+    font-size:15px;
+}
+
+.section-title h2,
+.testimonials h2,
+.map-header h2,
+.related-hotels-title{
+    font-size:28px;
+}
+
+.wishlist-hero{
+    height:260px;
+}
+
+.wishlist-hero-content h1{
+    font-size:34px;
+}
+
+.wishlist-content h3{
+    font-size:22px;
+}
+
+.wishlist-content h4{
+    font-size:24px;
+}
+
+}
