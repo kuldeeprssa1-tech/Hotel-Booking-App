@@ -1,38 +1,36 @@
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
+import L from "leaflet";
+
 import "leaflet/dist/leaflet.css";
+
+import markerIcon2x from "leaflet/dist/images/marker-icon-2x.png";
+import markerIcon from "leaflet/dist/images/marker-icon.png";
+import markerShadow from "leaflet/dist/images/marker-shadow.png";
+
+delete L.Icon.Default.prototype._getIconUrl;
+
+L.Icon.Default.mergeOptions({
+  iconRetinaUrl: markerIcon2x,
+  iconUrl: markerIcon,
+  shadowUrl: markerShadow,
+});
 
 function MapSection() {
   return (
-    <section className="map-section">
-      <div className="map-header">
-        <p>LOCATION</p>
-        <h2>Find Us On The Map</h2>
-      </div>
+    <MapContainer
+      center={[28.6139, 77.2090]}
+      zoom={13}
+      style={{ height: "500px", width: "100%" }}
+    >
+      <TileLayer
+        attribution="&copy; OpenStreetMap contributors"
+        url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+      />
 
-      <div className="map-card">
-        <MapContainer
-          center={[28.6139, 77.2090]}
-          zoom={13}
-          scrollWheelZoom={false}
-          style={{
-            height: "500px",
-            width: "100%",
-            borderRadius: "25px",
-          }}
-        >
-          <TileLayer
-            attribution='&copy; OpenStreetMap contributors'
-            url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-          />
-
-          <Marker position={[28.6139, 77.2090]}>
-            <Popup>
-              StayEase Luxury Hotel
-            </Popup>
-          </Marker>
-        </MapContainer>
-      </div>
-    </section>
+      <Marker position={[28.6139, 77.2090]}>
+        <Popup>StayEase Hotel</Popup>
+      </Marker>
+    </MapContainer>
   );
 }
 
