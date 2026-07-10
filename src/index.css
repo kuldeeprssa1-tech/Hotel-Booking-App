@@ -404,6 +404,11 @@ nav a:hover {
   width: 100%;
   max-width: 450px;
   padding: 15px 25px;
+  border: none;
+  border-radius: 50px;
+  font-size: 18px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  outline: none;
 }
 
 .hotel-card {
@@ -570,14 +575,14 @@ nav a:hover {
 }
 
 .similar-card {
-  width: 250px;
+  width: 100%;
+  max-width: 260px;
   background: white;
   border-radius: 15px;
   overflow: hidden;
   box-shadow: 0 10px 25px rgba(0,0,0,0.1);
   transition: 0.3s;
 }
-
 .similar-card:hover {
   transform: translateY(-10px);
 }
